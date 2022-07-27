@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --ColorDarkGrey: #333333;
+    --ColorLightGrey: #4F4F4F;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+}
+  
+  /* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: var(--ColorDarkGrey);
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    height: 238px;
+    width: 287px;
+    margin: 109px 40px 0 40px;
+    border-radius: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 4px 0 20px
+}
+
+h1 {
+    margin: 0;
+    color: var(--ColorDarkGrey);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+}
+
+p {
+    margin-top: 30px;
+    color: var(--ColorLightGrey);
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+}
+
+button {
+    margin-top: 66px;
+    width: 216px;
+    height: 68px;
+    margin-bottom: 155px;
+    padding: 24px 43px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+}
+
+/*media*/
+@media screen and (min-width: 1440px) {
+    header {
+        margin-left: 77px;
+        margin-top: 40px;
+    }
+
+    img {
+        height: 448px;
+        width: 540px;
+        margin: 200px 120px 0 77px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container {
+        margin-top: 200px;
+    }
+
+    h1 {
+        font-size: 64px;
+        line-height: 95px;
+    }
+
+    p {
+        margin-top: 36px;
+        margin-right: 323px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    button {
+        margin-top: 64px;
+    }
+}
